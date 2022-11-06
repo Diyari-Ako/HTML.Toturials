@@ -30,7 +30,7 @@ label is associated with.   if >>>>>>> for="" = id"""
         <br>
         <div>
             <label for="fname">first name:</label>
-            <input type="text" id="fname" autofocus name="fname" placeholder="Spongebob" required>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob"  autofocus >
         </div>
         <br>
         <div>
@@ -39,52 +39,51 @@ label is associated with.   if >>>>>>> for="" = id"""
         </div>
 
         <br>
-
-        <div>
-            <label for="color">select color:</label>
-            <input type="color" id="color" name="color"  required readonly>
-        </div>
-
-        <br>
-
         <div>
             <label for="fname">first name:</label>
-            <input type="text" id="fname" name="fname" placeholder="Spongebob" required>
+            <input type="text" id="fname" name="fname" placeholder="Spongebob" required readonly>
         </div>
 
-        <br>
+         <br>
 
         <div>
             <label for="lname">last name:</label>
             <input type="text" id="lname" name="lname" placeholder="Squarepants" required>
+        </div>
+    
+        <br>
+
+        <div>
+            <label for="color">select color:</label>
+            <input type="color" id="color" name="color"  >
         </div>
 
         <br>
 
         <div>
             <label for="fname">datetime-local:</label>
-            <input type="datetime-local" id="fname" name="fname" placeholder="Spongebob" required>
+            <input type="datetime-local" id="fname" name="fname" placeholder="Spongebob" >
         </div>
 
         <br>
 
         <div>
             <label for="file">select a file:</label>
-            <input type="file" id="file" name="file"  required>
+            <input type="file" id="file" name="file"  >
         </div>
         
         <br>
 
         <div>
             <label for="fname">null:</label>
-            <input type="hidden" id="file" name="file"  required>
+            <input type="hidden" id="file" name="file"  >
         </div>
 
         <br>
 
         <div>
             <label for="pass">password:</label>
-            <input type="password" id="pass" name="pass" maxlength="12" required>
+            <input type="password" id="pass" name="pass" maxlength="12" >
         </div>
 
         <br>
@@ -134,7 +133,7 @@ label is associated with.   if >>>>>>> for="" = id"""
 
         <div>
             <label for="payment">payment:</label>
-            <select id="payment" name="payment" size="4">   <!-- (size) specify the value that show you without scrolling -->
+            <select id="payment" name="payment" size="5">   <!-- (size) specify the value that show you without scrolling -->
                 <option value="visa">visa</option>
                 <option value="mastercard">mastercard</option>
                 <option value="giftcard">giftcard</option>
@@ -150,9 +149,8 @@ label is associated with.   if >>>>>>> for="" = id"""
         <br>
 
         <div>
-            
             <label for="payment">payment:</label>
-            <select id="payment" name="payment" multiple>
+            <select id="payment" name="payment" multiple>  <!--multiple use to selec more than one option-->
                 <option value="visa">visa</option>
                 <option value="mastercard">mastercard</option>
                 <option value="giftcard">giftcard</option>
@@ -163,7 +161,7 @@ label is associated with.   if >>>>>>> for="" = id"""
         <div>
             
             <label for="payment">payment:</label>
-            <select id="payment" name="payment" >
+            <select id="payment" name="payment" size="6">
                 <optgroup label="card">
                     <option value="visa">visa</option>
                     <option value="mastercard">mastercard</option>
@@ -181,14 +179,14 @@ label is associated with.   if >>>>>>> for="" = id"""
 
         <div>
             <label for="subscribe">subscribe:</label>
-            <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
+            <input type="checkbox" id="subscribe" name="subscribe" >
         </div>
         
         <br>
 
         <div>
             <label for="image">select image:</label>
-            <input type="image" id="image" name="image" >
+            <input type="image" id="image" name="image" src="white.jpg" height="20px"  >
         </div>
         
         <br>
@@ -235,13 +233,12 @@ label is associated with.   if >>>>>>> for="" = id"""
         <br>
 
         <div>
-            <input type="submit">
-        </div>
-
+            <input type="reset" name="resetform" value="Reset">
+            </div>
         <br>
 
         <div>
-            <input type="button" name="message" value="Alert Me">
+            <input type="submit">
         </div>
 
         <br>
@@ -253,14 +250,15 @@ label is associated with.   if >>>>>>> for="" = id"""
         <br>
 
         <div>
-        <input type="reset" name="resetform" value="Reset">
+            <input type="button" name="message" value="Alert Me">
         </div>
 
-        <br>
-        
-        <button></button>
-        
-        
+        <button 
+            type="submit"> <img src="download.jpg" width="30"
+            height="23" alt="Add to Cart"> Add to Cart> 
+        </button>
+    
+            <br>
        
 
     </form>
